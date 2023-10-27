@@ -28,12 +28,12 @@ npm (v9.5.0)
 - Clone the repository using the following command:
 
   ```
-  git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+  git clone https://github.com/fl0gero/rest-country
   ```
 
 - Enter the repository directory:
   ```
-  cd YOUR-REPOSITORY
+  cd rest-country
   ```
 - Enter the `frontend` folder:
   ```
