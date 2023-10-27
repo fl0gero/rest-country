@@ -21,7 +21,9 @@ export const Countries = () => {
       const data = await findCountryInformation(country);
       if ("status" in data || data instanceof Error) {
         setError(data);
+        setCountriesData(undefined)
       } else {
+        setError(undefined);
         setCountriesData(data);
       }
       setLoading(false);
@@ -33,11 +35,12 @@ export const Countries = () => {
     const data = await findBorderCountryInformation(borderCountry);
     if ("status" in data || data instanceof Error) {
       setError(data);
-      setLoading(false);
+      setCountriesData(undefined);
     } else {
+      setError(undefined);
       setCountriesData(data);
-      setLoading(false);
     }
+    setLoading(false);
   };
 
   return (
